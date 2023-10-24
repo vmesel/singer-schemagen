@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gen-schema"
+version = "0.1.0"
+description = ""
+authors = ["Vinicius Mesel <4984147+vmesel@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "gen_schema"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+singer-sdk = "^0.33.0"
+ipdb = "^0.13.13"
+python-dateutil = "^2.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
