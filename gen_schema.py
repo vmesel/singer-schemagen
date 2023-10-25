@@ -5,13 +5,13 @@ from singer_sdk import typing as th
 json_to_process = """"""
 
 TYPES = {
-    "str": "th.StringType()",
-    "int": "th.IntegerType()",
-    "float": "th.NumberType()",
-    "bool": "th.BooleanType()",
-    "NoneType": "th.StringType()",
-    "datetime": "th.DateTimeType()",
-    "date": "th.DateType()"
+    "str": "th.StringType",
+    "int": "th.IntegerType",
+    "float": "th.NumberType",
+    "bool": "th.BooleanType",
+    "NoneType": "th.StringType",
+    "datetime": "th.DateTimeType",
+    "date": "th.DateType"
 }
 DATE_FORMATS = [
     "%Y-%m-%dT%H:%M:%S.%f%z",
