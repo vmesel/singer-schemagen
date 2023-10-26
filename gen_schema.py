@@ -72,7 +72,7 @@ def generate_schema(json_obj, start_schema = False, level=0):
     for key in json_obj.keys():
         if isinstance(json_obj[key], dict):
             schema += "\t" * (level + 1)
-            schema += "th.ObjectType("
+            schema += f'th.Property("{key}", th.ObjectType('
             for dict_key, dict_val in json_obj[key].items():
                 schema += generate_schema({dict_key: dict_val}, level = level + 2)
             schema += "),\n"
